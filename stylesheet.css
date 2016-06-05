@@ -1,0 +1,131 @@
+@charset "UTF-8"
+* {
+ box-sizing: border-box;
+}
+
+body {
+  font-family:helvetica;
+  margin:0em;
+  background-color: #ff6969;
+}
+
+.mast-head {
+  background-image: url("https://static.pexels.com/photos/254/pet-kitten-cat-lying-large.jpg");
+  background-repeat: no-repeat;
+  height:20em;
+  background-color: yellow;
+  background-size: cover;
+  text-align: center;
+  padding: 10em 6em;
+  color:pink;
+  border: 5px dotted pink;
+
+}
+
+section {
+  margin: 5em;
+  padding: 2em 2em;
+  border-radius: 5px;
+  -moz-box-shadow:    3px 3px 5px 6px #32CD32;
+  -webkit-box-shadow: 3px 3px 5px 6px #32CD32;
+  box-shadow:         3px 3px 5px 6px #32CD32;
+}
+
+section h1 {
+  border-bottom: 2px dotted white;
+  color:white;
+  text-shadow: 1px 1px 1px purple;
+}
+
+
+.mast-head p, .mast-head h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px #000,
+               3px 3px 5px blue;
+}
+
+.mast-head p {
+  font-size:3em;
+}
+
+.mast-head h1 {
+  font-size: 5em;
+  color: #ff69b4;
+}
+
+.intro-section, .about-me, .from {
+  background-color: #fff44f;
+}
+
+.social {
+  background-color: #ff5721;
+  list-style: none;
+  text-align: center;
+}
+
+.social ul, nav ul {
+  list-style: none;
+}
+
+.social li {
+  display:inline;
+  font-size: 3em;
+}
+
+nav li {
+  font-size: 3em;
+}
+
+footer a, nav ul a {
+  text-decoration:none;
+  color:#32CD32;
+}
+
+footer a:hover, nav ul a:hover {
+  text-decoration:none;
+  color:white;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:100%;
+
+}
+.nav li {
+  font-size: 1em;
+  display: inline-block;
+  padding: 8px;
+  align-items:left;
+}
+
+@media only screen and (max-width: 650px) {
+
+.mast-head h1, .mast-head p {
+    font-size:2em;
+
+}
+.mast-head {
+  height:10em;
+  padding: 1em 2em;
+}
+
+section {
+  margin: 2em;
+  padding: 1em 1em;
+  border-radius: 6px;
+  -moz-box-shadow:    1px 2px 3px 4px #32CD32;
+  -webkit-box-shadow: 1px 2px 3px 4px #32CD32;
+  box-shadow:         1px 2px 3px 4px #32CD32;
+}
+
+.social li {
+  display:inline;
+  font-size: 2em;
+}
+
+
+}
